@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<title>Teodora Nickovic</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: monospace}
+	
+.rotate{
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+	cursor: pointer;
+}
+
+.rotate.down{
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
+#languages, #skills, #certificates, #web, #plang {
+	display: none;
+	}
+
+a {
+	text-decoration: none;
+	}
+	
+a:hover {
+	color: teal;
+	}
+
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".rotate").click(function(){
+	console.log("ok");
+    $(this).toggleClass("down");
+  });
+  
+  $(".skills").click(function(){
+	$("#skills").slideToggle();
+	});
+
+  $(".languages").click(function(){
+    $("#languages").slideToggle();
+	});
+	
+  $(".certificates").click(function(){
+    $("#certificates").slideToggle();
+	});
+	
+  $(".web").click(function(){
+    $("#web").slideToggle();
+	});
+	
+  $(".plang").click(function(){
+    $("#plang").slideToggle();
+	});
+  });
+</script>
+
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="teodora.png" style="width:100%" alt="Avatar">
+        </div>
+        <div class="w3-container">
+		  <h2 class="w3-text-teal">Teodora Nićković</h2>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large"></i>CS student@University of Belgrade</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large"></i>Belgrade, Serbia</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large"></i>tnickovic@gmail.com</p>
+          <hr>
+		  
+		  <div class="w3-margin-bottom">
+			  <div class="w3-large w3-text-theme"><b><i class="fa fa-chevron-right fa-fw w3-margin-right rotate plang w3-text-teal"></i>Programming languages</b></div>
+			  <div id="plang">
+				  <div>C/C++</div>
+				  <div class="w3-light-grey w3-round-xlarge w3-small">
+					<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+				  </div>
+				  <div>HTML/CSS</div>
+				  <div class="w3-light-grey w3-round-xlarge w3-small">
+					<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">
+					  <div class="w3-center w3-text-white">90%</div>
+					</div>
+				  </div>
+				  <div>JavaScript</div>
+				  <div class="w3-light-grey w3-round-xlarge w3-small">
+					<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+				  </div>
+				  <div>Python</div>
+				  <div class="w3-light-grey w3-round-xlarge w3-small">
+					<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
+				  </div>
+				  <div>Java</div>
+				  <div class="w3-light-grey w3-round-xlarge w3-small">
+					<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">40%</div>
+				  </div>
+				  <div>C#</div>
+				  <div class="w3-light-grey w3-round-xlarge w3-small">
+					<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:35%">35%</div>
+				  </div>
+				  <div>Haskell</div>
+				  <div class="w3-light-grey w3-round-xlarge w3-small">
+					<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30%">30%</div>
+				  </div>
+				  <div>Scala</div>
+				  <div class="w3-light-grey w3-round-xlarge w3-small">
+					<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:15%">15%</div>
+				  </div>
+			  </div>
+		  </div>
+		  
+		  
+		  <div class="w3-margin-bottom">
+			  <div class="w3-large w3-text-theme"><b><i class="fa fa-chevron-right fa-fw w3-margin-right rotate skills w3-text-teal"></i>Related skills</b></div>
+				  <div id="skills">
+					  <div>TeX/LaTeX</div>
+					  <div class="w3-light-grey w3-round-xlarge w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+					  </div>
+					  <div>Linux</div>
+					  <div class="w3-light-grey w3-round-xlarge w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+						  <div class="w3-center w3-text-white">80%</div>
+						</div>
+					  </div>
+					  <div>Assembly</div>
+					  <div class="w3-light-grey w3-round-xlarge w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
+					  </div>
+					  <div>Documentation practices</div>
+					  <div class="w3-light-grey w3-round-xlarge w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30%">30%</div>
+					  </div>
+				  </div>
+			  </div>
+		  		  
+		  <div class="w3-margin-bottom">
+			  <div class="w3-large w3-text-theme"><b><i class="fa fa-chevron-right fa-fw w3-margin-right rotate languages w3-text-teal"></i>Languages</b></div>
+			  <div id="languages">
+				  <div>English</div>
+				  <div class="w3-light-grey w3-round-xlarge w3-small">
+					<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">
+					  <div class="w3-center w3-text-white">100%</div>
+					</div>
+				  </div>
+				  <div>Serbian</div>
+				  <div class="w3-light-grey w3-round-xlarge w3-small">
+					<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">
+					  <div class="w3-center w3-text-white">100%</div>
+					</div>
+				  </div>
+				  <div>German</div>
+				  <div class="w3-light-grey w3-round-xlarge w3-small">
+					<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:55%">
+					  <div class="w3-center w3-text-white">55%</div>
+					</div>
+				  </div>
+				  <br>
+			  </div>
+		   </div>
+		   
+		   <div class="w3-margin-bottom">
+			  <div class="w3-large w3-text-theme"><b><i class="fa fa-chevron-right fa-fw w3-margin-right rotate certificates w3-text-teal"></i>Certificates</b></div>
+			  <div id="certificates">
+				  <div>    > <b>Database design and Programming with SQL</b> / Oracle Academy</div>
+				  <div>    > <b>Java Programming</b> / Oracle Academy</div>
+				  <div>    > <b>Java Fundamentals</b> / Oracle Academy</div>
+				  <div>    > <b>Certificate in Advanced English (CAE)</b> / Cambridge English</div>
+				  <div>    > <b>C# Programming</b> / CET Computer Equipment and Trade</div>
+				  <br>
+			  </div>
+		   </div>
+		   
+		   <div class="w3-margin-bottom">
+			  <div class="w3-large w3-text-theme"><b><i class="fa fa-chevron-right fa-fw w3-margin-right rotate w3-text-teal web"></i>Find me on the web</b></div>
+			  <div id="web">
+				  <div class="w3-margin"><a href="https://github.com/art3mida"><b><i class="fa fa-github fa-fw"></i>github.com</b> (find projects here!)</div>
+					<div class="w3-margin"><a href="https://gitlab.com/art3mida"><b><i class="fa fa-gitlab fa-fw"></i>gitlab.com</b> (more projects!)</div>
+				  <div class="w3-margin"><a href="https://independent.academia.edu/TeodoraNickovic"><b><i class="fa fa-university fa-fw"></i>academia.org</b> (find papers here!)</div>
+				  <div class="w3-margin"><a href="https://www.linkedin.com/in/teodora-nickovic-90a475109/"><b><i class="fa fa-linkedin fa-fw"></i>linkedin.org</b></a></div>
+				  <br>
+			  </div>
+		   </div>
+		   
+		   <!-- ADD OTHER INTERESTS -->
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge"></i>Work Experience <span style="font-size:large; float: right;"><a href="TeodoraNickovicCV.pdf">(click here for a pdf version)</a></span></h2>
+        <div class="w3-container">
+          <h5 class=""><b>Software Engineering Intern / Youtube</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2019 - Sep 2019</h6>
+          <p>Worked for 12 weeks on the Youtube Ads team, on a feature for automatic ad creation using statistical models and machine learning.</p>
+          <hr>
+        </div>
+		<div class="w3-container">
+          <h5 class=""><b>Software Engineering Intern / Google</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2018 - Sep 2018</h6>
+          <p>Worked with the Knowledge team for 12 weeks, as a part of Google's Summer Trainee Engineering Program. More specifically, built a tool to improve developer velocity for the engineers that work on the knowledge graph.
+		  I used mostly C++ for the server side of the project, and HTML/CSS with JavaScript, specifically the Polymer library, for the client.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class=""><b>Math teacher/ Educational center "Korak napred"</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Tutoring students from grade 5 to grade 12, in group and individual settings. Preparatory classes for all math competiton levels and for the Mathematical Grammar School entrance exam.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class=""><b>Web and FR team / Student organisation "Omikron"</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - Oct 2018</h6>
+          <p>Organisation of multiple manifestations, including JobPrep and MatHackathon. My responsibilities included developing small organisational apps, both for the Omikron team and for the participants,
+		  and making web pages that handled applications forms and similar things. Occasionally also contacting and making deals with the sponsors.</p><br>
+        </div>
+		<div class="w3-container">
+          <h5 class=""><b>Software Development Intern / COFA Games</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2015 - Aug 2015</h6>
+          <p>Worked on and finished a promotional side project for the main project in the company at the time, the "Awakening of Heroes" game. The side project was an infinite 3D runner, done in Unity 3D using C#.</p><br>
+        </div>
+	  </div>
+	  
+	  <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge"></i>Projects</h2>
+		<div class="w3-container">
+			<h5 class=""><b><a href="https://gitlab.com/matf-bg-ac-rs/course-rs/projects-2020-2021/04-chimp"><i class="fa fa-picture-o fa-fw w3-margin-right"></i>CHIMP photo editor</a></b></h5>
+			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021</h6>
+			<p>A photo editor with complex features and effects built from scratch, using C++ and Qt.</p>
+			<hr>
+		  </div>
+		<div class="w3-container">
+          <h5 class=""><b><a href="https://gitlab.com/matfpveb/projekti/2019-2020/36-matfeterija"><i class="fa fa-users fa-fw w3-margin-right"></i>Matfeterija</a></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020</h6>
+          <p>Social network and online bookstore for students of the Faculty of Mathematics at the University of Belgrade. Made using the MEAN stack.</p>
+          <hr>
+        </div>
+		<div class="w3-container">
+          <h5 class=""><b><a href="https://github.com/Min032/Tabu-Search"><i class="fa fa-search fa-fw w3-margin-right"></i>Tabu search paper</a></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020</h6>
+          <p>Wrote a paper on tabu search as a part of a university course and implemented the solution to the capacitated facility location problem using tabu search as the optimization for genetic algorithm.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class=""><b><a href="https://github.com/art3mida/RI20-MinimalCliquePartitioning"><i class="fa fa-connectdevelop fa-fw w3-margin-right"></i>Minimal clique partitioning paper</a></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020</h6>
+          <p>Wrote a paper on minimal clique partitioning as a part of a Computational Intelligence university course. Implemented and compared various solutions that use genetic algorithms with different optimizations.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class=""><b><a href="https://github.com/MATF-RG19/RG9-svemirski-traktor"><i class="fa fa-space-shuttle fa-fw w3-margin-right"></i>Space Tractor</a></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019</h6>
+          <p>An OpenGL 3D infinite runner.</p><br>
+		</div>
+		<div class="w3-container">
+			<h5 class=""><a href="https://github.com/art3mida/JumpyGame"><b><i class="fa fa-gamepad fa-fw w3-margin-right"></i>Jumpy Game</b></a></h5>
+			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+			<p>C# infinite jumper game (reminiscent of Icy Tower). Everything, including graphics, made from scratch.</p><br>
+		  </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge"></i>Education</h2>
+        <div class="w3-container">
+          <h4 class="w3-teal-text"><b>(future) Bachelor of Computer Science</b></h4>
+		  <h5 class="w3-opacity"><b>University of Belgrade, Faculty of Mathematics</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2021 (expected)</h6>
+          <p>I'm currently enrolled in the fourth year, with a GPA of 9.4/10.</br>You can find all of the subjects I have taken or currently am taking on my university's page, <a href="http://www.matf.bg.ac.rs/eng/m/94/osnovne-informatics/"><b>here</b></a>.</p>
+		  
+          <hr>
+        </div>
+        <div class="w3-container">
+		  <h4 class="w3-teal-text"><b>Matura</b></h4>
+          <h5 class="w3-opacity"><b>Mathematical Grammar School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2016</h6>
+          <p>A highschool with a special focus on technical subjects, meaning mathematics, physics and computer science. Graduated with a GPA of 4.0, and participated in math and computer science competitions althroughout highschool. You can find the entire curriculum <a href="https://mg.edu.rs/en/studies/curriculum.html"><b>here</b></a>.</p>
+          <hr>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  Special thanks to w3schools. Adapted from <a href="https://www.w3schools.com/w3css/tryw3css_templates_cv.htm">this template</a>.
+</footer>
+
+</body>
+</html>
